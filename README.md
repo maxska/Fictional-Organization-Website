@@ -1,9 +1,6 @@
 # Fictional-Organization-Website
 A website I made for a fictional organization as a project in a course I took in HTML and CSS
 
-
-At the time I did this project I didn't really use Git, so this commit is the 
-first one version on Github. 
-However, if you'd like to see the previous versions, they're available in 
-the folder /old_versions
-
+The requirement for the course was to create the website in only HTML & CSS, so
+i.e. the navigation bar had to be made for every page. It was not allowed to use
+a solution like PHP for this.
