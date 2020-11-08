@@ -1,0 +1,84 @@
+/*======================== Återställ margins bl.a ==========================*/
+
+
+
+/*======================== Stil för element ==========================*/
+
+header{
+	background-color: pink;
+	height: 100px;
+}
+
+body{
+	background-color: grey;
+}
+
+main{
+	font-size: 18px;
+	background-color: lightblue;
+	margin-left: 150px; /* Måste vara samma som width för local_nav */
+	padding: 20px;
+}
+
+footer{
+	background-color: green;
+	color: white;
+	text-align: center;
+}
+
+/*======================== Navigering ==========================*/
+/*_______________Båda _______________*/
+
+nav ul, #local_nav ul{
+	list-style-type: none;
+	padding: 0; /* Tar bort den padding som normalt läggs till för ul */
+	margin: 0; /* Tar bort den margin som normalt läggs till för ul */
+
+	font-family: Arial;
+	font-size: 20px;
+}
+
+nav ul li, #local_nav ul li{
+	background-color: white;
+}
+
+/*_______________ nav _______________*/
+
+nav{
+	background-color: darkred;
+	margin-top: 0px;
+}
+
+nav ul{
+	padding: 10px;
+}
+
+nav ul li{
+	display: inline;
+	padding: 5px;
+}
+/*_______________ #local_nav _______________*/
+
+#local_nav ul li{
+	display: block;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#local_nav{
+	background-color: darkgreen;
+	display: block;
+	float: left;
+	width: 150px; /* Måste vara samma som margin-left för main */
+	padding: 0;
+}
+
+/*===================== Stil för övriga egna element med ID =======================*/
+
+#wrapper{
+	background-color: khaki;
+
+	max-width:800px; /* responsiv bredd */ 
+	margin:0 auto;
+}

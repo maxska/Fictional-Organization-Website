@@ -1,0 +1,199 @@
+/*======================== Återställ margins bl.a ==========================*/
+html, body, div, header, nav, main, section, footer{
+	margin:0;
+	padding:0;
+}
+header, nav, main, footer, section {
+	display:block;
+}
+
+
+/*======================== Stil för element ==========================*/
+
+header{
+	background-image: url("pics/computer-monitor3.jpg");
+	
+	padding: 1vw;
+	
+	
+	color: black;
+
+
+
+	font-family: Candara;
+	font-size: 20px;
+
+
+	background-repeat: no-repeat; /* Do not repeat the image */
+  	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+header h1{
+	margin: 0;
+	padding: 0;
+
+
+	display: block;
+}
+
+
+body{
+	background-color: grey;
+}
+
+main{
+	font-size: 18px;
+	background-color: lightblue;
+	margin-left: 0px; /* Måste vara samma som width för local_nav */
+	padding: 20px;
+}
+
+footer{
+	background-color: green;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+footer p{
+	margin: 0;
+}
+
+/*======================== Navigering ==========================*/
+/*_______________Båda _______________*/
+
+nav ul{
+	list-style-type: none;
+	padding: 0; /* Tar bort den padding som normalt läggs till för ul */
+	margin: 0; /* Tar bort den margin som normalt läggs till för ul */
+
+	font-family: Arial;
+	font-size: 20px;
+}
+
+nav ul li{
+	background-color: white;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+	background-color: orange;
+	padding: 10px;
+	display: inline;
+}
+
+/*_______________ nav _______________*/
+
+nav{
+	background-color: darkred;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+
+nav ul{
+	
+}
+
+nav ul li{
+	display: inline;
+}
+
+
+/*===================== Stil för övriga egna element med ID =======================*/
+
+#wrapper{
+	background-color: darkgreen;
+
+	max-width:800px; /* responsiv bredd */ 
+	margin:0 auto;
+}
+
+
+
+#thisPage{
+	background-color: black;
+	height: 100px;
+}
+
+
+/*===================== Responsiv design =======================*/
+
+
+@media screen and (min-width: 780px){
+	nav ul li{
+		margin-right: 5px;
+	}
+}
+
+@media screen and (min-width: 760px){
+	#long1:after{
+		content: " föreningen";
+	}
+
+	#long2:after{
+		content: " och svar";
+	}
+}
+
+@media screen and (max-width: 760){
+
+	
+}
+
+
+
+@media screen and (max-width: 570px){
+	nav ul{
+		font-size: 18px;
+	}
+
+	nav a{
+		padding: 5px;
+	}
+
+	nav{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+
+
+
+	header{
+
+		height: 10vw;
+		font-size: 4vw;
+
+		background-size: 200% ;
+		background-position: top left;
+	}
+	header h1{
+		display: inline;
+	}
+	
+
+
+
+
+}
+
+@media screen and (max-width: 470px){
+	nav ul{
+		font-size: 16px;
+	}
+
+	nav a{
+		padding: 2px;
+	}
+
+	nav{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+
+}
+

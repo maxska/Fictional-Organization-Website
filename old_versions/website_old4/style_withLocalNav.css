@@ -1,0 +1,83 @@
+
+main{
+	margin-left: 150px; /* Måste vara samma som width för local_nav */
+}
+
+
+/*======================== Navigering ==========================*/
+/*_______________ #local_nav _______________*/
+#local_nav ul{
+	list-style-type: none;
+	padding: 0; /* Tar bort den padding som normalt läggs till för ul */
+	margin: 0; /* Tar bort den margin som normalt läggs till för ul */
+
+	font-family: Arial;
+	font-size: 20px;
+}
+
+
+
+#local_nav a{
+	text-decoration: none;
+	color: white;
+
+	background-color: red;
+	border: 1px solid black;
+
+	padding: 10px;
+	display: inline;
+
+	width: 100px;
+}
+
+
+
+#local_nav ul li{
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 30px;
+
+	width: 100%;
+}
+
+#local_nav{
+	background-color: green;
+	display: block;
+	float: left;
+	width: 150px; /* Måste vara samma som margin-left för main */
+
+	/*margin-top: 10px*/
+}
+
+
+
+/*===================== Stil för övriga egna element med ID =======================*/
+
+/*===================== Responsiv design =======================*/
+
+
+@media screen and (max-width: 650px){
+	#local_nav{
+		background-color: green;
+		float: none;
+		display: block;
+		width: 100%;
+
+
+		padding-left: 10px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+}
+
+	#local_nav ul li{
+		display: inline;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+
+	main{
+		margin-left: 0;
+	}
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="sv">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Max kodförening</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style_withLocalNav.css">
+
+	</head>
+	
+	<body>
+		<div id="wrapper">
+
+			<header>
+				<h1>Max </h1>
+				<h1>Kodförening</h1>
+			</header>
+
+			<input type="checkbox" id="nav-button">
+			<label for="nav-button" id="nav-button-label">
+				<img src="pics/menu-button-2.png" id="nav-button-image" alt="knapp för navigationsmeny">
+			</label>
+			
+
+
+			<nav id="global_nav">
+				<ul>
+					<li><a href="index.htm">Start</a></li>
+					<li><a href="resources.htm">Resurser</a></li>
+					<li><a href="events.htm">Evenemang</a></li>
+					<li><a href="about.htm">Om&nbsp;föreningen</a></li>
+					<li><a href="contact.htm" id="thisPage">Kontakt</a></li>
+				</ul>
+			</nav>
+
+			<nav id="local_nav">
+				<h2 id="local_nav_title">Kontakt:</h2>
+				<ul>
+					<li><a href="form_contact.htm" id="thisLocalPage">Kontaktformulär</a></li>
+					<li><a href="address.htm">Besöksadress</a></li>
+				</ul>
+			</nav>
+
+			<main>
+				<h3>Kontaktformulär</h3>
+
+				<p>Här kan du ställa vilken fråga du vill! Obligatoriska fält har en röd asterisk (<span class="red">*</span>) vid sig.</p>
+
+				<hr>
+
+				<form id="contactForm" name="contactForm" method="post" action="">
+					<input type="hidden" name="form" value="Kontaktformulär för Max Kodförening">
+
+					<label>
+						<p>Namn</p> 
+						<input type="text" name="namn">
+					</label>
+
+					<label>
+						<p>E-post<span class="red">*</span></p> 
+						<input type="text" name="epost">
+					</label>
+
+					<label>
+						<p>Meddelande<span class="red">*</span></p>
+						<textarea name="meddelande" id="textarea"></textarea>
+					</label>
+
+					<input type="submit" value="Skicka">
+				</form>
+
+
+			</main>	
+
+			<footer>
+				<p>Max Kodförening, 2020 &copy;</p>
+				<p><a href="address.htm" id="white">Stockholmsvägen 1, 181 11 Stockholm</a></p>
+			</footer>
+
+		</div> <!-- End wrapper -->
+
+	</body>
+
+</html>
